@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.EC327FinalRepo">
-
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+    package="com.example.intents">
 
     <application
         android:allowBackup="true"
@@ -10,13 +8,9 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FinalTesting">
+        android:theme="@style/Theme.Intents">
         <activity
-            android:name="com.example.EC327FinalRepo.SettingsActivity"
-            android:exported="false"
-            android:label="@string/title_activity_settings" />
-        <activity
-            android:name="com.example.EC327FinalRepo.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
