@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Camera</string>
     <string name="app_name">Medic101</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
