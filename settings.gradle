@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Intents"
+rootProject.name = "FinalTesting"
 include ':app'
