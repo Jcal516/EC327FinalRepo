@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/buttonSet"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCal"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+    <ImageButton
+        android:id="@+id/buttonCam"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSet"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSrv"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageButton
+        android:id="@+id/buttonCal"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toEndOf="@+id/buttonSrv"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHos"
+        app:srcCompat="@drawable/ic_baseline_call_24" />
+
+    <ImageButton
+        android:id="@+id/buttonAid"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/buttonHos"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_local_hospital_24" />
+
+    <ImageButton
+        android:id="@+id/buttonSrv"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAid"
+        app:srcCompat="@drawable/ic_baseline_assignment_24" />
+
+    <ImageButton
+        android:id="@+id/buttonHos"
+        android:layout_width="120dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_medical_services_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
