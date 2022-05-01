@@ -8,6 +8,9 @@
             android:title="@string/requestNumber"
             android:key="iam3" />
 
+        <SwitchPreference
+            android:key="test"
+            android:title="1234"/>
 
 
     </PreferenceCategory>
