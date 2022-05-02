@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.EC327FinalRepo.MedicActivity">
+
+    <Button
+        android:id="@+id/resources"
+        android:layout_width="195dp"
+        android:layout_height="63dp"
+        android:text="Resources"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergency" />
+
+    <Button
+        android:id="@+id/Basic"
+        android:layout_width="195dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginEnd="138dp"
+        android:text="Basic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/emergency"
+        android:layout_width="195dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginEnd="127dp"
+        android:text="Emergency Preparedness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Basic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

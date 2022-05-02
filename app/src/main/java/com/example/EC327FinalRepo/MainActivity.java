@@ -43,8 +43,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        ImageButton medicButton = findViewById(R.id.buttonAid);
         ImageButton callButton = findViewById(R.id.buttonCal);
         ImageButton settingsButton = findViewById(R.id.buttonSet);
+
+        medicButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, MedicActivity.class);
+                startActivity(i);
+            }
+        });
 
         callButton.setOnClickListener(new View.OnClickListener(){
             @Override
