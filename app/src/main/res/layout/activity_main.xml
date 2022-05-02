@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
+<ImageButton
         android:id="@+id/buttonSet"
         android:layout_width="120dp"
         android:layout_height="132dp"
@@ -31,7 +31,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSrv"
-        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" /> //this is the camera button
 
     <ImageButton
         android:id="@+id/buttonCal"
@@ -82,4 +82,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_medical_services_24" />
+
+    //deleted textview
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
