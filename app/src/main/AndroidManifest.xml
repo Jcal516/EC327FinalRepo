@@ -12,21 +12,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalTesting">
         <activity
-            android:name="com.example.EC327FinalRepo.SettingsActivity"
+            android:name=".MedicResources"
+            android:exported="false" />
+        <activity
+            android:name=".MedicEmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicBasicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
             android:exported="false"
             android:label="@string/title_activity_settings" />
-
         <activity
-            android:name="com.example.EC327FinalRepo.MainActivity"
+            android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

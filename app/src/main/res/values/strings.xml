@@ -21,4 +21,32 @@
     <string name="requestNumber">Enter in your emergency number</string>
     <string name="prefs_change_number">prefs_change_number</string>
     <string name="prefsNumberSummary">Change Number</string>
+
+
+    <!-- Basic Medic Array -->
+    <string-array name="BasicMedicList">
+        <item>Cuts And Abrasions</item>
+        <item>Burns</item>
+        <item>Choking</item>
+        <item>Eyes</item>
+        <item>Allergic Reactions</item>
+        <item>Animal Bites</item>
+        <item>Heat Stroke</item>
+        <item>Hypothermia</item>
+        <item>Low Blood Sugar</item>
+    </string-array>
+
+    <string-array name="BasicDescriptionList">
+        <item>call the 911--------------------------</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>
 </resources>
