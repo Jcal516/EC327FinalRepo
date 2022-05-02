@@ -1,4 +1,4 @@
-package com.example.myapplication_1;
+package com.example.EC327FinalRepo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
