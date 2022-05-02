@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
         });
         
         ListView listview=(ListView)findViewById(R.id.listView);
-
+        ImageButton callButton = findViewById(R.id.buttonCal);
+        ImageButton settingsButton = findViewById(R.id.buttonSet);
         SharedPreferences sharedPreferences =getApplicationContext().getSharedPreferences(("com.example.myapplication_1"),Context.MODE_PRIVATE);
         HashSet<String> set=(HashSet<String>) sharedPreferences.getStringSet("notes",null);
         if (set==null) {
