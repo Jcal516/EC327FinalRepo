@@ -37,6 +37,21 @@ static ArrayAdapter arrayAdapter;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageButton camera = findViewById(R.id.buttonCam);
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    Intent intent = new Intent();
+                    intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                    startActivity(intent);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+            }
+        });
+        
         ListView listview=(ListView)findViewById(R.id.listView);
 
         SharedPreferences sharedPreferences =getApplicationContext().getSharedPreferences(("com.example.myapplication_1"),Context.MODE_PRIVATE);
