@@ -67,9 +67,6 @@ public class MainActivity extends AppCompatActivity {
             notes = new ArrayList<>(set);
         }
 
-
-
-
         arrayAdapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1,notes);
         listview.setAdapter(arrayAdapter);
 
@@ -147,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void makePhoneCall() {
 
-
        //String defaultValue = getResources().getString(R.string.prefs_change_number);
         String number;
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -162,7 +158,6 @@ public class MainActivity extends AppCompatActivity {
             String dial = "tel:" + number;
             startActivity(new Intent(Intent.ACTION_CALL, Uri.parse(dial)));
             System.out.println("6");
-
         }
     }
 
