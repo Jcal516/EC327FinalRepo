@@ -14,7 +14,6 @@ import java.util.HashSet;
 
 public class Note_Editor extends AppCompatActivity {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
