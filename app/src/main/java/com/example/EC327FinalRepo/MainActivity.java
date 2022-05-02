@@ -30,8 +30,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
-static ArrayList<String> notes=new ArrayList<>();
-static ArrayAdapter arrayAdapter;
+    private static final int REQUEST_CALL = 1;
+    static ArrayList<String> notes=new ArrayList<>();
+    static ArrayAdapter arrayAdapter;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
