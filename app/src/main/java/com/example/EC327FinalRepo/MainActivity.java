@@ -22,7 +22,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CALL = 1;
-
+    //in case everything here breaks
+    //static ArrayAdapter arrayAdapter;
+    //
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
