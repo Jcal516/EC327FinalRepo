@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
+
+import java.util.Calendar;
 import java.util.HashSet;
 
 public class Note_Editor extends AppCompatActivity {
@@ -40,8 +42,10 @@ public class Note_Editor extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                Notes_Activity.notes.set(finalNoteId,String.valueOf(charSequence));
+                Notes_Activity.notes.set(finalNoteId,String.valueOf(charSequence) + "\n" + String.valueOf(Calendar.getInstance().getTime()));
                 Notes_Activity.arrayAdapter.notifyDataSetChanged();
+
+
 
                 SharedPreferences sharedPreferences =getApplicationContext().getSharedPreferences(("com.example.myapplication_1"), Context.MODE_PRIVATE);
 

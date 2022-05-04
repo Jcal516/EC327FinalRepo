@@ -19,6 +19,9 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Calendar;
+
+
 
 public class Notes_Activity extends AppCompatActivity {
 static ArrayList<String> notes=new ArrayList<>();
@@ -34,7 +37,7 @@ static ArrayAdapter arrayAdapter;
         SharedPreferences sharedPreferences =getApplicationContext().getSharedPreferences(("com.example.myapplication_1"),Context.MODE_PRIVATE);
         HashSet<String> set=(HashSet<String>) sharedPreferences.getStringSet("notes",null);
         if (set==null) {
-            notes.add("Please provide the date, indicate type of injury, and pain rating from 1-10");
+            notes.add("Please indicate type of injury and pain rating from 1-10");
 
         }else {
 
@@ -48,8 +51,8 @@ static ArrayAdapter arrayAdapter;
         listview.setAdapter(arrayAdapter);
 
 
-        notes.add("Please provide the date, indicate type of injury, and pain rating from 1-10");
-        notes.add("Please provide the date, indicate type of injury, and pain rating from 1-10");
+        notes.add("Please indicate type of injury and pain rating from 1-10");
+
 
 
         listview.setOnItemClickListener((adapterView, view, i, l) -> {
