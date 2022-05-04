@@ -8,32 +8,45 @@
 
     <Button
         android:id="@+id/resources"
-        android:layout_width="195dp"
-        android:layout_height="63dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:textSize="19dp"
+        android:backgroundTint="@color/dark_brown"
         android:text="Resources"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emergency" />
 
     <Button
         android:id="@+id/Basic"
-        android:layout_width="195dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="78dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="138dp"
+        android:backgroundTint="@color/dark_brown"
         android:text="Basic"
+        android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/emergency"
-        android:layout_width="195dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="89dp"
-        android:layout_marginEnd="127dp"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/dark_brown"
         android:text="Emergency Preparedness"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Basic" />
 </androidx.constraintlayout.widget.ConstraintLayout>
