@@ -49,7 +49,8 @@
         <item></item>
         <item></item>
 
-    </string-array>    <string name="map_id">db371d029c5a76e3</string>
+    </string-array>
+    <string name="map_id">db371d029c5a76e3</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCG0uDiH1x7WdZWzP3QjBFDAD8xghREe-k</string>
 </resources>
