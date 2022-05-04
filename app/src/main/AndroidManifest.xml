@@ -13,8 +13,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EC327_mapfunc">
-
+android:theme="@style/Theme.FinalTesting">
+        <activity
+            android:name=".MedicResources"
+            android:exported="false" />
+        <activity
+            android:name=".MedicEmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicBasicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MedicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".Notes_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Note_Editor"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
