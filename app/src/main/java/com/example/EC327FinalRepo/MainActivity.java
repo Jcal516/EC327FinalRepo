@@ -61,6 +61,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        ImageButton notesButton = findViewById(R.id.buttonSrv);
+        notesButton.setOnClickListener(view -> {
+            Intent j = new Intent(MainActivity.this, Notes_Activity.class);
+            startActivity(j);
+        });
     }
 
     private void makePhoneCall() {
