@@ -33,6 +33,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageButton camera = findViewById(R.id.buttonCam);
+        ImageButton medicButton = findViewById(R.id.buttonAid);
+        ImageButton callButton = findViewById(R.id.buttonCal);
+        ImageButton settingsButton = findViewById(R.id.buttonSet);
+        ImageButton notesButton = findViewById(R.id.buttonSrv);
+        ImageButton mapsButton = findViewById(R.id.buttonHos);
+
+        medicButton.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, MedicActivity.class);
+            startActivity(i);
+        });
+
+        callButton.setOnClickListener(view -> makePhoneCall());
+        settingsButton.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, SettingsActivity.class);
+            startActivity(i);
+        });
+
+        notesButton.setOnClickListener(view -> {
+            Intent j = new Intent(MainActivity.this, Notes_Activity.class);
+            startActivity(j);
+        });
+
+        mapsButton.setOnClickListener(view ->{
+            Intent k = new Intent(MainActivity.this, MapsActivity.class);
+            startActivity(k);
+        });
+
         camera.setOnClickListener(view -> {
             try{
                 Intent intent = new Intent();
@@ -42,30 +69,6 @@ public class MainActivity extends AppCompatActivity {
             catch (Exception e){
                 e.printStackTrace();
             }
-        });
-
-        ImageButton medicButton = findViewById(R.id.buttonAid);
-        ImageButton callButton = findViewById(R.id.buttonCal);
-        ImageButton settingsButton = findViewById(R.id.buttonSet);
-
-        medicButton.setOnClickListener(view -> {
-            Intent i = new Intent(MainActivity.this, MedicActivity.class);
-            startActivity(i);
-        });
-
-        callButton.setOnClickListener(view -> makePhoneCall());
-        settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, SettingsActivity.class);
-                startActivity(i);
-            }
-        });
-
-        ImageButton notesButton = findViewById(R.id.buttonSrv);
-        notesButton.setOnClickListener(view -> {
-            Intent j = new Intent(MainActivity.this, Notes_Activity.class);
-            startActivity(j);
         });
     }
 
