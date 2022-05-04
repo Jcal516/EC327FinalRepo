@@ -23,6 +23,7 @@ import java.util.HashSet;
 public class Notes_Activity extends AppCompatActivity {
 static ArrayList<String> notes=new ArrayList<>();
 static ArrayAdapter arrayAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +47,10 @@ static ArrayAdapter arrayAdapter;
         arrayAdapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1,notes);
         listview.setAdapter(arrayAdapter);
 
+
         notes.add("Please provide the date, indicate type of injury, and pain rating from 1-10");
+        notes.add("Please provide the date, indicate type of injury, and pain rating from 1-10");
+
 
         listview.setOnItemClickListener((adapterView, view, i, l) -> {
             Intent intent = new Intent(getApplicationContext(),Note_Editor.class);
