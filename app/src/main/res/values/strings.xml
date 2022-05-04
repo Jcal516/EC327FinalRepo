@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Medic101</string>
     <string name="title_activity_settings">SettingsActivity</string>
@@ -49,4 +50,7 @@
         <item></item>
 
     </string-array>
+    <string name="map_id">db371d029c5a76e3</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCG0uDiH1x7WdZWzP3QjBFDAD8xghREe-k</string>
 </resources>
