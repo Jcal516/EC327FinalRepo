@@ -1,4 +1,4 @@
-package com.example.myapplication_1;
+package com.example.EC327FinalRepo;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,13 +20,13 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class MainActivity extends AppCompatActivity {
+public class Notes_Activity extends AppCompatActivity {
 static ArrayList<String> notes=new ArrayList<>();
 static ArrayAdapter arrayAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.notes_activity);
 
         ListView listview=(ListView)findViewById(R.id.listView);
 
@@ -48,39 +48,30 @@ static ArrayAdapter arrayAdapter;
 
         notes.add("Please provide the date, indicate type of injury, and pain rating from 1-10");
 
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(),Note_Editor.class);
-                intent.putExtra("noteId",i);
-                startActivity(intent);
-            }
+        listview.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent intent = new Intent(getApplicationContext(),Note_Editor.class);
+            intent.putExtra("noteId",i);
+            startActivity(intent);
         });
-        listview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                final int itemToDelete=i;
+        listview.setOnItemLongClickListener((adapterView, view, i, l) -> {
+            final int itemToDelete=i;
 
-                new AlertDialog.Builder(MainActivity.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .setTitle("Are you sure you want to delete")
-                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialogInterface, int i) {
-                               notes.remove(itemToDelete);
-                               arrayAdapter.notifyDataSetChanged();
-                                SharedPreferences sharedPreferences =getApplicationContext().getSharedPreferences(("com.example.myapplication_1"), Context.MODE_PRIVATE);
+            new AlertDialog.Builder(Notes_Activity.this)
+                    .setIcon(android.R.drawable.ic_dialog_alert)
+                    .setTitle("Are you sure you want to delete")
+                    .setPositiveButton("Yes", (dialogInterface, i1) -> {
+                       notes.remove(itemToDelete);
+                       arrayAdapter.notifyDataSetChanged();
+                        SharedPreferences sharedPreferences1 =getApplicationContext().getSharedPreferences(("com.example.myapplication_1"), Context.MODE_PRIVATE);
 
-                                HashSet<String> set=new HashSet<>(MainActivity.notes);
-                                sharedPreferences.edit().putStringSet("notes",set).apply();
+                        HashSet<String> set1 =new HashSet<>(Notes_Activity.notes);
+                        sharedPreferences1.edit().putStringSet("notes", set1).apply();
 
-                            }
-                        })
-                        .setNegativeButton("No",null)
-                        .show();
-                return true;
+                    })
+                    .setNegativeButton("No",null)
+                    .show();
+            return true;
 
-            }
         });
 
     }
