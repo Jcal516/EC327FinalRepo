@@ -5,60 +5,10 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     class="com.google.android.gms.maps.SupportMapFragment"
     xmlns:tools="http://schemas.android.com/tools"
-    map:mapId="@+id/db371d029c5a76e3"
     android:id="@+id/db371d029c5a76e3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ec327_mapfunc.MapsActivity"
+    tools:context="com.example.EC327FinalRepo.MapsActivity"
     map:uiZoomControls="true"
     map:uiRotateGestures="true"
     map:cameraTilt="30"/>
-
-
-<!--map:mapId="db371d029c5a76e3"-->
-<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--class="com.google.android.gms.maps.SupportMapFragment"-->
-<!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:id="@+id/db371d029c5a76e3"-->
-<!--map:mapId="db371d029c5a76e3"-->
-<!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--tools:context="com.example.ec327_mapfunc.MapsActivity"-->
-<!--map:uiZoomControls="true"-->
-<!--map:uiRotateGestures="true"-->
-<!--map:cameraTilt="30"/>-->
-
-
-
-<!--<fragment android:id="@+id/db371d029c5a76e3"-->
-<!--    android:name="com.google.android.gms.maps.SupportMapFragment"-->
-<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:map="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MapsActivity"/>-->
-
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--xmlns:tools="http://schemas.android.com/tools"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="match_parent"-->
-<!--tools:context=".MainActivity" />-->
-
-<!--<TextView-->
-<!--    android:id="@+id/textview1"-->
-<!--    android:layout_width="wrap_content"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_centerHorizontal="true"-->
-<!--    android:layout_centerVertical="true"-->
-<!--    android:text="@string/hello_world" />-->
-<!--<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:map="http://schemas.android.com/apk/res-auto"-->
-<!--    android:id="@+id/db371d029c5a76e3"-->
-<!--    android:name="com.google.android.gms.maps.SupportMapFragment"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    tools:context=".MapsActivity" />-->
