@@ -1,11 +1,5 @@
 package com.example.EC327FinalRepo;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.preference.PreferenceManager;
-
 import android.Manifest;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -14,32 +8,39 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.Toast;
-import android.widget.Button;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.preference.PreferenceManager;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CALL = 1;
-
+    //in case everything here breaks these declarations used to be here
+    //static ArrayAdapter arrayAdapter;
+    //static ArrayList<String> notes=new ArrayList<>();
+    
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         ImageButton camera = findViewById(R.id.buttonCam);
-        camera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try{
-                    Intent intent = new Intent();
-                    intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
-                    startActivity(intent);
-                }
-                catch (Exception e){
-                    e.printStackTrace();
-                }
+        camera.setOnClickListener(view -> {
+            try{
+                Intent intent = new Intent();
+                intent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivity(intent);
+            }
+            catch (Exception e){
+                e.printStackTrace();
             }
         });
 
@@ -47,20 +48,12 @@ public class MainActivity extends AppCompatActivity {
         ImageButton callButton = findViewById(R.id.buttonCal);
         ImageButton settingsButton = findViewById(R.id.buttonSet);
 
-        medicButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, MedicActivity.class);
-                startActivity(i);
-            }
+        medicButton.setOnClickListener(view -> {
+            Intent i = new Intent(MainActivity.this, MedicActivity.class);
+            startActivity(i);
         });
 
-        callButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                makePhoneCall();
-            }
-        });
+        callButton.setOnClickListener(view -> makePhoneCall());
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -68,12 +61,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        ImageButton notesButton = findViewById(R.id.buttonSrv);
+        notesButton.setOnClickListener(view -> {
+            Intent j = new Intent(MainActivity.this, Notes_Activity.class);
+            startActivity(j);
+        });
     }
 
     private void makePhoneCall() {
 
 
-       //String defaultValue = getResources().getString(R.string.prefs_change_number);
         String number;
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         number = sharedPreferences.getString("iam3", "555");
