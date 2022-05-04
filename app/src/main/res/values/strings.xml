@@ -1,7 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EC327_mapfunc</string>
-    <string name="map_id">db371d029c5a76e3</string>
+<string name="app_name">Medic101</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+    <!-- Settings Preferencees -->
+    <string name="requestNumber">Enter in your emergency number</string>
+    <string name="prefs_change_number">prefs_change_number</string>
+    <string name="prefsNumberSummary">Change Number</string>
+
+
+    <!-- Basic Medic Array -->
+    <string-array name="BasicMedicList">
+        <item>Cuts And Abrasions</item>
+        <item>Burns</item>
+        <item>Choking</item>
+        <item>Eyes</item>
+        <item>Allergic Reactions</item>
+        <item>Animal Bites</item>
+        <item>Heat Stroke</item>
+        <item>Hypothermia</item>
+        <item>Low Blood Sugar</item>
+    </string-array>
+
+    <string-array name="BasicDescriptionList">
+
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+
+    </string-array>    <string name="map_id">db371d029c5a76e3</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCG0uDiH1x7WdZWzP3QjBFDAD8xghREe-k</string>
 </resources>
