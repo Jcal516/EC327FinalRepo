@@ -15,6 +15,14 @@
         android:supportsRtl="true"
     android:theme="@style/Theme.FinalTesting">
         <activity
+            android:name="com.example.EC327FinalRepo.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+            </activity>
+        <activity
             android:name=".MedicResources"
             android:exported="false" />
         <activity
@@ -36,6 +44,7 @@
         <activity
             android:name=".Note_Editor"
             android:exported="false" />
+
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -58,11 +67,6 @@
         <activity
             android:name="com.example.EC327FinalRepo.MapsActivity"
             android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 </manifest>

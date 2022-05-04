@@ -4,7 +4,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     class="com.google.android.gms.maps.SupportMapFragment"
     xmlns:tools="http://schemas.android.com/tools"
-    map:mapId="@string/map_id"
     android:id="@+id/db371d029c5a76e3"
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
