@@ -22,9 +22,9 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CALL = 1;
-    //in case everything here breaks
+    //in case everything here breaks these declarations used to be here
     //static ArrayAdapter arrayAdapter;
-    //
+    //static ArrayList<String> notes=new ArrayList<>();
     
     
     @Override
