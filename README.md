@@ -20,3 +20,7 @@ Running the App: <br /><br />
     4. Connect to an Android emulator <br />
 
 Make sure you give the app all the permissions it asks for, to access all the features!
+
+
+Authors: Jason Calalang, Sunni Lin, Eliott Dinfotan, Ismail Sufi, Aryan Gupta
+EC327 BU Software Engineering 2022 Spring
