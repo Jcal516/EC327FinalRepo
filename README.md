@@ -14,3 +14,5 @@ Running the App: <br />
     1. Clone the repository in the directory of your choosing <br />
     2. Open the cloned repository with Android Studio <br />
     3. Build the gradle app <br />
+
+Make sure you give the app all the permissions it asks for, to access all the features!
