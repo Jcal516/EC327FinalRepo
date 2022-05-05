@@ -22,5 +22,5 @@ Running the App: <br /><br />
 Make sure you give the app all the permissions it asks for, to access all the features!
 
 
-Authors: Jason Calalang, Sunni Lin, Eliott Dinfotan, Ismail Sufi, Aryan Gupta
+Authors: Jason Calalang, Sunni Lin, Eliott Dinfotan, Ismail Sufi, Aryan Gupta<br />
 EC327 BU Software Engineering 2022 Spring
