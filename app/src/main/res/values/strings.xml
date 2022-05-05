@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Medic101</string>
     <string name="title_activity_settings">SettingsActivity</string>
-
+    <string name="MapId">db371d029c5a76e3</string>
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
@@ -18,7 +18,7 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
 
-    <!-- Settings Preferencees -->
+    <!-- Settings Preferences -->
     <string name="requestNumber">Enter in your emergency number</string>
     <string name="prefs_change_number">prefs_change_number</string>
     <string name="prefsNumberSummary">Change Number</string>
@@ -35,22 +35,22 @@
         <item>Heat Stroke</item>
         <item>Hypothermia</item>
         <item>Low Blood Sugar</item>
+
     </string-array>
 
     <string-array name="BasicDescriptionList">
 
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
-        <item></item>
+        <item><summary>Wash your hands. Clean wound, apply antibiotic, cover with bandage.</summary></item>
+        <item><summary>Wash your hands. Run under cool water, apply lotion, cover with bandage. Do not pop blisters.</summary></item>
+        <item><summary>Stand behind person. Make fist above belly button, clasp with other hand. Pull sharply inward and upward, repeat until choking stops.</summary></item>
+        <item><summary>Flush eyes with running cool water until clear. For chemicals, rinse for 10 minutes.</summary></item>
+        <item><summary>Administer Epipen to thigh if available. Identify allergen and call paramedics.</summary></item>
+        <item><summary>Identify animal if possible. Treat like a cut. If rabies is suspected, contact doctor.</summary></item>
+        <item><summary>Move person to shade or cool place. Have person slowly sip cool water.</summary></item>
+        <item><summary>Remove wet clothing. Move person to warm place. Soak extremities in cool (NOT hot) water.</summary></item>
+        <item><summary>Give person sugary drink or snack, such as fruit juice, candy (NOT sugar-free), or honey.</summary></item>
 
     </string-array>
-    <string name="map_id">db371d029c5a76e3</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCG0uDiH1x7WdZWzP3QjBFDAD8xghREe-k</string>
 </resources>
