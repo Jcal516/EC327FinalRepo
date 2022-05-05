@@ -1,5 +1,8 @@
 # EC327FinalRepo
 
+APP: Medic 101
+Description: To provide a simple interface for elderly members to respond quickly when either facing a medical emergency or sustaining an injury for which the medical attention goes beyond the scope of their immediate knowledge; Medic101 combines multiple medical services into the same place for convenience and ease. The main object of this app is to be simple and easy to use, so the target audience may have less trouble navigating its functions, and their peers or doctors can track their progress through the notes modality.
+
 Running the App: <br />
   Option 1: <br />
     1. Connect Android Studio to Version Control (git) <br />
@@ -14,5 +17,6 @@ Running the App: <br />
     1. Clone the repository in the directory of your choosing <br />
     2. Open the cloned repository with Android Studio <br />
     3. Build the gradle app <br />
+    4. Connect to an Android emulator <br />
 
 Make sure you give the app all the permissions it asks for, to access all the features!
